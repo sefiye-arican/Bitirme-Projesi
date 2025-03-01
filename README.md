@@ -1,3 +1,54 @@
+# Disease Detection from Fundus Images  
+
+This project is an **undergraduate capstone project** that aims to detect eye diseases from fundus images. Various preprocessing techniques have been applied to enhance image quality and ensure class balance.  
+
+## Dataset Used  
+
+The project utilizes the following dataset:  
+
+🔗 **CLAHE-ESRGAN Split Fundus Dataset**  
+[![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-blue)](https://www.kaggle.com/datasets/ahmetselukkren/clahe-esrgan-split-fundus-dataset)  
+
+This dataset is a processed version of **ODIR-5K** (Ocular Disease Recognition).  
+
+## Dataset Processing Steps  
+
+- **Classification by Disease Labels:**  
+  The original dataset's fundus images were categorized based on their disease labels.  
+
+- **Balancing Class Distribution:**  
+  Each class was ensured to contain at least **2000 images**. To address the class imbalance problem, **synthetic data augmentation** was applied.  
+
+- **Dataset Splitting:**  
+  The dataset was divided into **train** and **test** sets.  
+
+- **Image Quality Enhancement:**  
+  - **CLAHE (Contrast Limited Adaptive Histogram Equalization)**  
+  - **ESRGAN (Enhanced Super-Resolution Generative Adversarial Network)**  
+  were used to improve contrast and enhance image resolution.  
+
+## Original Dataset: ODIR-5K  
+
+The original dataset, **Ocular Disease Intelligent Recognition (ODIR)**, is a structured ophthalmic database containing fundus images from **5,000 patients** along with age information and diagnostic keywords provided by doctors. This dataset represents **real-world** patient information collected from various hospitals and medical centers in China. The fundus images were captured using different camera models from Canon, Zeiss, and Kowa, leading to variations in image resolution.  
+
+The dataset was **annotated by trained experts** under quality control management. Patients were classified into the following **eight disease categories**:  
+
+- **Normal (N)**  
+- **Diabetes (D)**  
+- **Glaucoma (G)**  
+- **Cataract (C)**  
+- **Age-related Macular Degeneration (A)**  
+- **Hypertension (H)**  
+- **Pathological Myopia (M)**  
+- **Other Diseases/Abnormalities (O)**  
+
+## References  
+
+- 📌 **ODIR-5K Original Dataset:** [Kaggle](https://www.kaggle.com/datasets/andrewmvd/ocular-disease-recognition-odir5k)  
+- 📌 **Processed Dataset Used:** [Kaggle](https://www.kaggle.com/datasets/ahmetselukkren/clahe-esrgan-split-fundus-dataset)  
+
+
+
 # Fundus Görüntülerinden Hastalık Tespiti  
 
 Bu proje, fundus görüntülerinden göz hastalıklarını tespit etmeyi amaçlayan bir **lisans bitirme projesidir**. Çalışmada, görüntü kalitesini artırmak ve sınıf dengesini sağlamak amacıyla çeşitli ön işleme teknikleri uygulanmıştır.  
